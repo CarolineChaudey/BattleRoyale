@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EC625EF91FA32A080014DDCA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC625EF81FA32A080014DDCA /* main.swift */; };
+		EC625F001FA32AD00014DDCA /* IWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC625EFF1FA32AD00014DDCA /* IWeapon.swift */; };
+		EC625F021FA32C510014DDCA /* Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC625F011FA32C510014DDCA /* Gun.swift */; };
+		EC625F041FA330680014DDCA /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC625F031FA330680014DDCA /* Sword.swift */; };
+		EC625F061FA335BF0014DDCA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC625F051FA335BF0014DDCA /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		EC625EF51FA32A080014DDCA /* BattleRoyal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BattleRoyal; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC625EF81FA32A080014DDCA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EC625EFF1FA32AD00014DDCA /* IWeapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWeapon.swift; sourceTree = "<group>"; };
+		EC625F011FA32C510014DDCA /* Gun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gun.swift; sourceTree = "<group>"; };
+		EC625F031FA330680014DDCA /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
+		EC625F051FA335BF0014DDCA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				EC625EF81FA32A080014DDCA /* main.swift */,
+				EC625EFF1FA32AD00014DDCA /* IWeapon.swift */,
+				EC625F011FA32C510014DDCA /* Gun.swift */,
+				EC625F031FA330680014DDCA /* Sword.swift */,
+				EC625F051FA335BF0014DDCA /* Player.swift */,
 			);
 			path = BattleRoyal;
 			sourceTree = "<group>";
@@ -121,6 +133,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC625EF91FA32A080014DDCA /* main.swift in Sources */,
+				EC625F041FA330680014DDCA /* Sword.swift in Sources */,
+				EC625F021FA32C510014DDCA /* Gun.swift in Sources */,
+				EC625F061FA335BF0014DDCA /* Player.swift in Sources */,
+				EC625F001FA32AD00014DDCA /* IWeapon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
