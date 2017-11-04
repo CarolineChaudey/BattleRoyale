@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82AB73AC1FAE0EBD009FDD70 /* IWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AB73AB1FAE0EBD009FDD70 /* IWeapon.swift */; };
+		82AB73AE1FAE1126009FDD70 /* Excalibur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AB73AD1FAE1126009FDD70 /* Excalibur.swift */; };
 		EC625EF91FA32A080014DDCA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC625EF81FA32A080014DDCA /* main.swift */; };
-		EC625F001FA32AD00014DDCA /* IWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC625EFF1FA32AD00014DDCA /* IWeapon.swift */; };
 		EC625F021FA32C510014DDCA /* Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC625F011FA32C510014DDCA /* Gun.swift */; };
 		EC625F041FA330680014DDCA /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC625F031FA330680014DDCA /* Sword.swift */; };
-		EC625F061FA335BF0014DDCA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC625F051FA335BF0014DDCA /* Player.swift */; };
+		EC625F061FA335BF0014DDCA /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC625F051FA335BF0014DDCA /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,12 +28,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		82AB73AB1FAE0EBD009FDD70 /* IWeapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWeapon.swift; sourceTree = "<group>"; };
+		82AB73AD1FAE1126009FDD70 /* Excalibur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excalibur.swift; sourceTree = "<group>"; };
 		EC625EF51FA32A080014DDCA /* BattleRoyal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BattleRoyal; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC625EF81FA32A080014DDCA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		EC625EFF1FA32AD00014DDCA /* IWeapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWeapon.swift; sourceTree = "<group>"; };
 		EC625F011FA32C510014DDCA /* Gun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gun.swift; sourceTree = "<group>"; };
 		EC625F031FA330680014DDCA /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
-		EC625F051FA335BF0014DDCA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EC625F051FA335BF0014DDCA /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				EC625EF81FA32A080014DDCA /* main.swift */,
-				EC625EFF1FA32AD00014DDCA /* IWeapon.swift */,
 				EC625F011FA32C510014DDCA /* Gun.swift */,
 				EC625F031FA330680014DDCA /* Sword.swift */,
-				EC625F051FA335BF0014DDCA /* Player.swift */,
+				EC625F051FA335BF0014DDCA /* Character.swift */,
+				82AB73AB1FAE0EBD009FDD70 /* IWeapon.swift */,
+				82AB73AD1FAE1126009FDD70 /* Excalibur.swift */,
 			);
 			path = BattleRoyal;
 			sourceTree = "<group>";
@@ -133,10 +136,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC625EF91FA32A080014DDCA /* main.swift in Sources */,
+				82AB73AE1FAE1126009FDD70 /* Excalibur.swift in Sources */,
 				EC625F041FA330680014DDCA /* Sword.swift in Sources */,
+				82AB73AC1FAE0EBD009FDD70 /* IWeapon.swift in Sources */,
 				EC625F021FA32C510014DDCA /* Gun.swift in Sources */,
-				EC625F061FA335BF0014DDCA /* Player.swift in Sources */,
-				EC625F001FA32AD00014DDCA /* IWeapon.swift in Sources */,
+				EC625F061FA335BF0014DDCA /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

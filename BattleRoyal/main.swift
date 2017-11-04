@@ -9,24 +9,24 @@
 import Foundation
 
 
-func updatePlayers (players: [Player]) -> [Player] {
+func updatePlayers (players: [Character]) -> [Character] {
     return Array(players.drop(while: {
-        if $0.life <= 0 {
+        if $0.health <= 0 {
             return true
         }
         return false
     }))
 }
 
-func attackOccures(attaquant: Player, victim: Player) {
+func attackOccures(attaquant: Character, victim: Character) {
     attaquant.attack(ennemy: victim)
-    print("\(victim.pseudo) a \(victim.life) PV")
+    print("\(victim.name) a \(victim.health) PV")
 }
 
-let noob = Player(pseudo: "kékédu93")
-let steve = Player(pseudo: "Steve", weapon: Sword(name: "Dard", height: 50.0, width: 5.0, weight: 5.0, price: 70.0, year: 100))
-let froster = Player(pseudo: "Steve", weapon: Gun(name: "Diplomatie", height: 10.0, width: 3.0, weight: 3.0, price: 100.0, bullets: 10))
-var players = [noob, steve, froster]
+let noob = Character(name: "kékédu93")
+let steve = Character(name: "Steve", weapon: Sword(name: "Dard", height: 50.0, width: 5.0, weight: 5.0, price: 70.0, year: 100))
+//let froster = Player(pseudo: "Steve", weapon: Gun(name: "Diplomatie", height: 10.0, width: 3.0, weight: 3.0, price: 100.0, bullets: 10))
+var players = [noob, steve]
 
 print("La bataille commence !")
 repeat {
@@ -35,4 +35,5 @@ repeat {
     players = updatePlayers(players: players)
 } while (players.count > 1)
 
-print("Et le gagnant est \(players[0].pseudo) !")
+print("Et le gagnant est \(players[0].name) !")
+
