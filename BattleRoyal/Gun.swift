@@ -32,12 +32,16 @@ class Gun : IWeapon {
     
     func damage() -> Int {
         // Est le rapport entre le poids et la multiplication entre la hauteur et la largeur. Le bonus s’ajoute à cette valeur
+        //print("Bonus du pistolet : \(bonus())")
+        use()
         return Int(weight / (height * width)) + bonus()
     }
     
     func bonus() -> Int {
         // Correspond à une multiplication entre le nombre de balles et le poids, le tout divisé par le poids modulo le nombre de balles
-        return Int((Float(bullets) * weight) / Float((Int(weight) % bullets)))
+        //return Int((Float(bullets) * weight) / Float((Int(weight) % bullets)))
+        // risque de division par 0
+        return Int((Float(bullets) * weight))
     }
     
     func use() -> Bool {

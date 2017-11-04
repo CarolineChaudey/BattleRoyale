@@ -46,8 +46,4 @@ class Sword: IWeapon {
         // Uniquement si l’arme est légendaire, le poids divisé par l’Année de l’épée
         return legendary ? Int(weight / Float(year)) : 0
     }
-    
-    func use() -> Bool {
-        return true
-    }
 }

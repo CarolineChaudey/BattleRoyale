@@ -10,30 +10,28 @@ import Foundation
 
 
 func updatePlayers (players: [Character]) -> [Character] {
-    return Array(players.drop(while: {
-        if $0.health <= 0 {
-            return true
-        }
-        return false
-    }))
+    return players.filter { $0.health > 0 }
 }
 
-func attackOccures(attaquant: Character, victim: Character) {
-    attaquant.attack(ennemy: victim)
-    print("\(victim.name) a \(victim.health) PV")
-}
-
+// players initialization
 let noob = Character(name: "kékédu93")
-let steve = Character(name: "Steve", weapon: Sword(name: "Dard", height: 50.0, width: 5.0, weight: 5.0, price: 70.0, year: 100))
-//let froster = Player(pseudo: "Steve", weapon: Gun(name: "Diplomatie", height: 10.0, width: 3.0, weight: 3.0, price: 100.0, bullets: 10))
-var players = [noob, steve]
+let steve = Character(name: "Steve", weapon: Sword(name: "Dard", height: 50.0, width: 5.0, weight: 5.0, price: 70.0, year: 50))
+let roiArthur = Character(name: "roi Arthur", weapon: Excalibur())
+let froster = Character(name: "Froster", weapon: Gun(name: "Diplomatie", height: 7.0, width: 2.0, weight: 5.0, price: 1000.0, bullets: 10))
+var players = [noob, steve, roiArthur, froster]
 
 print("La bataille commence !")
+var i = 1
 repeat {
-    attackOccures(attaquant: noob, victim: steve)
-    attackOccures(attaquant: steve, victim: noob)
-    players = updatePlayers(players: players)
+    print("\nTOUR \(i)")
+    i += 1
+    players.forEach({ charac in
+        if charac.health > 0 {
+            charac.attack(group: players)
+        }
+        players = updatePlayers(players: players)
+    })
 } while (players.count > 1)
 
-print("Et le gagnant est \(players[0].name) !")
+print("\nEt le gagnant est \(players[0].name) !")
 
